@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Media Elements Showcase</title>
+  </head>
+  <body>
+    <header>
+      <h1>Meet Ibraheem Bello: A Student At AltSchool Africa</h1>
+      <p>Exploring the capabilities of HTML media elements to tell my story</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Who I Am</h2>
+        <picture>
+          <!-- Different image sources for different screen sizes -->
+          <source
+            media="(max-width: 480px)"
+            srcset="/assets/images/profile/Mobile1.jpg"
+            alt="An image of myself on mobile devices"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="/assets/images/profile/Ibraheem 5.jpg"
+            alt="An image of myself on tablets"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="/assets/images/profile/Laptop 1.jpg"
+            alt="An image of myself on desktops"
+          />
+          <!-- Fallback image -->
+          <img
+            src="/assets/images/icons/profile_icon.png"
+            alt="Ibraheem Bello a student at AltSchool Africa"
+            width="800"
+            height="450"
+          />
+        </picture>
+
+        <p>
+          I'm Ibraheem Bello, a Backend Engineering student at AltSchool
+          Africa—driven, outspoken, and honest.
+        </p>
+      </section>
+
+      <section>
+        <h2>Listen to My Introduction</h2>
+        <audio controls>
+          <source src="/assets/audio/My-Tech-Journey.mp3" type="audio/mpeg" />
+          <source src="audio-file-not-available.ogg" type="audio/ogg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p>
+          <em
+            >Note: This is where an audio introduction would play if a file were
+            available.</em
+          >
+        </p>
+      </section>
+
+      <section>
+        <h2>Watch Me in Action</h2>
+        <video
+          controls
+          width="640"
+          height="360"
+          poster="/assets/images/profile/Ibraheem 3.jpg"
+        >
+          <source src="/assets/videos/My-Tech-Journey.mp4" type="video/mp4" />
+          <source src="video-file-not-available.webm" type="video/webm" />
+          Your browser does not support the video tag.
+          <track
+            src="captions-en.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+          />
+        </video>
+        <p>
+          <em
+            >Note: This is where a video demonstration would play if a file were
+            available.</em
+          >
+        </p>
+      </section>
+
+      <section>
+        <h2>My Skills and Capabilities</h2>
+        <figure>
+          <img
+            src="/assets/images/profile/Coding.png"
+            alt="Ibraheem's capabilities visualization"
+            width="600"
+            height="400"
+          />
+          <figcaption>
+            Visualization of Ibraheem's Core Strengths: Coding, Analytical
+            Reasoning, and Problem-Solving.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Let's Work Together</h2>
+        <picture>
+          <!-- More responsive images with different dimensions and crops -->
+          <source
+            media="(max-width: 480px)"
+            srcset="/assets/images/profile/Mobile.jpg"
+            alt="Ibraheem collaboration - mobile view"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="/assets/images/profile/Tablet.jpg"
+            alt="Ibraheem collaboration - tablet view"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="/assets/images/profile/HTML_certificate.jpg"
+            alt="Ibraheem collaboration - desktop view"
+          />
+          <img
+            src="/assets/images/profile/Product Landing Page_ Build a Product Landing Page _ freeCodeCamp.png"
+            alt="Let's collaborate"
+            width="640"
+            height="400"
+          />
+        </picture>
+
+        <p>
+          I write code, conduct research, solve problems, and continuously
+          explore new challenges!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created using pure HTML media elements - no CSS styling</p>
+      <p>© 2025 All rights reserved</p>
+      <p><a href="table.html">Return to AltSchool Africa Courses</a></p>
+    </footer>
+  </body>
+</html>
